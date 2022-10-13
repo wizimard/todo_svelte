@@ -5,5 +5,5 @@ You will need docker or node js to use the app.
 docker:  
 `docker compose up`  
 npm:  
-`npm start`  
+`npm run dev`  
 `npx json-server --watch json-server/db.json --port 3030`
