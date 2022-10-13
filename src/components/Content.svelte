@@ -5,7 +5,9 @@
     import { store } from "../store/store";
     import CategoryService from '../services/CategoryService';
 
-    let currentCategory;
+  let currentCategory;
+
+  let isMobile = window.innerWidth <= 600;
 
     store.subscribe(value => {
       currentCategory = value.currentCategory;
@@ -28,7 +30,7 @@
     })
 </script>
 
-<div class="content">
+<div class={`content ${isMobile && !currentCategory ? 'content_hide' : ''}`}>
     {#if !!currentCategory}
       <div class="content__header">
         <button class="back" on:click={CategoryService.clearCurrentCategory}>

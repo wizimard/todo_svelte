@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "name": "University",
+      "id": 2
+    },
+    {
+      "name": "Music",
+      "id": 3
+    },
+    {
+      "name": "Home",
+      "id": 4
+    },
+    {
+      "name": "Job",
+      "id": 5
+    }
+  ],
+  "todos": [
+    {
+      "category_id": 2,
+      "text": "Object oriented programming",
+      "isDone": 0,
+      "id": 1
+    },
+    {
+      "category_id": 2,
+      "text": "Network technologies",
+      "isDone": 1,
+      "id": 2
+    },
+    {
+      "category_id": 2,
+      "text": "Web-programming",
+      "isDone": 0,
+      "id": 3
+    }
+  ]
+}

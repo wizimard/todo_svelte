@@ -1,0 +1,25 @@
+version: '3.9'
+
+networks:
+  todo_svelte_network:
+    driver: bridge
+
+services:
+  client:
+    container_name: todo_svelte_client
+    hostname: todo_svelte_client
+    build:
+      context: ./
+    ports:
+      - "5050:80"
+    networks:
+      - todo_svelte_network
+  server:
+    container_name: todo_svelte_server
+    hostname: todo_svelte_server
+    build:
+      context: ./json-server/
+    ports:
+      - "3030:3030"
+    networks:
+      - todo_svelte_network
