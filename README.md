@@ -1,5 +1,5 @@
 # Todo appliaction 
-(/assets/screen.png)
+![Screen desktop](/assets/screen.png)
 The application is using svelte for client and json-server for server.
 You will need docker or node js to use the app.
 docker:
